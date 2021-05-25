@@ -13,13 +13,20 @@ div.ui.secondary.pointing.menu{
     width: 100%;
 }
 
+nav{
+    width: 100%;
+    position: fixed;
+    z-index:11;
+    /* margin-top: 1.2rem; */
+}
+
 nav a{
     font-size: 1.5rem;
 }
 
 canvas{
     z-index: 10;
-    position: relative;
+    position: fixed;
 }
 
 div.ui.vertical.icon.menu{
@@ -33,4 +40,16 @@ div.side-bar{
     align-items: center;
     position:absolute;
     z-index:11;
+}
+
+section{
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+}
+
+div.ui.menu{
+    height: 7vh;
+    position: relative;
+    z-index: 11;
 }
