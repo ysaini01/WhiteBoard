@@ -17,7 +17,7 @@ nav{
     width: 100%;
     position: fixed;
     z-index:11;
-    /* margin-top: 1.2rem; */
+    margin-top: 1rem;
 }
 
 nav a{
@@ -29,17 +29,10 @@ canvas{
     position: fixed;
 }
 
-div.ui.vertical.icon.menu{
-    position: absolute;
+div.ui.menu{
+    height: 5vh;
+    position: relative;
     z-index: 11;
-}
-
-div.side-bar{
-    height: 105%;
-    display: flex;
-    align-items: center;
-    position:absolute;
-    z-index:11;
 }
 
 section{
@@ -48,8 +41,64 @@ section{
     height: 100vh;
 }
 
-div.ui.menu{
-    height: 7vh;
-    position: relative;
-    z-index: 11;
+section div.colors{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section div.colors .colors-col{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section div.colors .colors-col div{
+    border: 1px solid wheat;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+}
+
+section div.colors div.colors-col:nth-of-type(1) div:first-child{
+    background-color: teal;
+}
+
+section div.colors div.colors-col:nth-of-type(1) div:last-child{
+    background-color:yellowgreen;
+}
+
+section div.colors div.colors-col:nth-of-type(2) div:first-child{
+    background-color: cornflowerblue;
+}
+
+section div.colors div.colors-col:nth-of-type(2) div:last-child{
+    background-color: tomato;
+}
+
+section div.colors div.colors-col:nth-of-type(3) div:first-child{
+    background-color: chocolate;
+}
+
+section div.colors div.colors-col:nth-of-type(3) div:last-child{
+    background-color: lawngreen;
+}
+
+section div.colors div.colors-col:nth-of-type(4) div:first-child{
+    background-color: royalblue;
+}
+
+section div.colors div.colors-col:nth-of-type(4) div:last-child{
+    background-color: red;
+}
+
+section div.colors div.colors-col:nth-of-type(5) div:first-child{
+    background-color: rebeccapurple;
+}
+
+section div.colors div.colors-col:nth-of-type(5) div:last-child{
+    background-color: thistle;
 }
