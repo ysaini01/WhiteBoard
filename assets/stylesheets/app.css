@@ -13,92 +13,83 @@ div.ui.secondary.pointing.menu{
     width: 100%;
 }
 
-nav{
-    width: 100%;
-    position: fixed;
-    z-index:11;
-    margin-top: 1rem;
-}
-
 nav a{
     font-size: 1.5rem;
 }
 
 canvas{
     z-index: 10;
-    position: fixed;
+    position: relative;
 }
 
-div.ui.menu{
-    height: 5vh;
-    position: relative;
+div.ui.vertical.icon.menu{
+    position: absolute;
     z-index: 11;
 }
 
-section{
+div.side-bar{
+    height: 105%;
     display: flex;
-    align-items: flex-end;
-    height: 100vh;
+    align-items: center;
+    position:absolute;
+    z-index:11;
 }
 
-section div.colors{
+div.colors-col{
+    width: 100%;
     height: 100%;
-    width: 15%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    height: 25px;
 }
 
-section div.colors .colors-col{
-    width: 10%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-section div.colors .colors-col div{
+div.colors-col div{
     border: 1px solid wheat;
     height: 100%;
     width: 100%;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
-section div.colors div.colors-col:nth-of-type(1) div:first-child{
-    background-color: teal;
+div.colors div.colors-col div:hover{
+    cursor: pointer;
 }
 
-section div.colors div.colors-col:nth-of-type(1) div:last-child{
-    background-color:yellowgreen;
+div.colors div.colors-col:nth-of-type(1) div:first-child{
+    background-color: rgb(124, 43, 255);
 }
 
-section div.colors div.colors-col:nth-of-type(2) div:first-child{
+div.colors div.colors-col:nth-of-type(1) div:last-child{
+    background-color:rgb(255, 64, 214);
+}
+
+div.colors div.colors-col:nth-of-type(2) div:first-child{
     background-color: cornflowerblue;
 }
 
-section div.colors div.colors-col:nth-of-type(2) div:last-child{
-    background-color: tomato;
+div.colors div.colors-col:nth-of-type(2) div:last-child{
+    background-color: wheat;
 }
 
-section div.colors div.colors-col:nth-of-type(3) div:first-child{
-    background-color: chocolate;
+div.colors div.colors-col:nth-of-type(3) div:first-child{
+    background-color: rgb(231, 224, 224);
 }
 
-section div.colors div.colors-col:nth-of-type(3) div:last-child{
-    background-color: lawngreen;
+div.colors div.colors-col:nth-of-type(3) div:last-child{
+    background-color: rgb(179, 174, 174);
 }
 
-section div.colors div.colors-col:nth-of-type(4) div:first-child{
-    background-color: royalblue;
+div.colors div.colors-col:nth-of-type(4) div:first-child{
+    background-color: rgb(255, 74, 74);
 }
 
-section div.colors div.colors-col:nth-of-type(4) div:last-child{
-    background-color: red;
+div div.colors div.colors-col:nth-of-type(4) div:last-child{
+    background-color: rgb(137, 255, 90);
 }
 
-section div.colors div.colors-col:nth-of-type(5) div:first-child{
-    background-color: rebeccapurple;
+div.colors div.colors-col:nth-of-type(5) div:first-child{
+    background-color: rgb(255, 224, 49);
 }
 
-section div.colors div.colors-col:nth-of-type(5) div:last-child{
-    background-color: thistle;
+div.colors div.colors-col:nth-of-type(5) div:last-child{
+    background-color: rgb(0, 0, 0);
 }
